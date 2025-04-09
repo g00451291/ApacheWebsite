@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .content_section_text {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+    </header>
+
+    <div class="content_section_text">
+        <p>
+            Please use the <tt>ubuntu-bug</tt> tool to report bugs in the Apache2 package with Ubuntu.
+        </p>
+    </div>
+
+    <div class="content_section_text">
+        <button onclick="changeText()">Click Me!</button>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        function changeText() {
+            document.getElementById("demo").innerHTML = "You clicked the button!";
+        }
+    </script>
+</body>
+</html>
+
